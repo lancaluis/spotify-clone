@@ -1,6 +1,6 @@
 @import url(../css/reset.css);
 @import url(../css/colors.css);
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 
 html,
 body {
@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   height: 100vh;
-  padding: 0 3rem 0 1.5rem;
+  padding: 0 5rem 0 1.5rem;
   color: var(--sidebar-color);
   background: var(--sidebar-background);
 }
@@ -47,4 +47,67 @@ body {
   align-items: center;
   gap: 0.8rem;
   text-transform: capitalize;
+}
+
+.container__section {
+  width: 100%;
+  background: linear-gradient(120deg, #5d2b96, #191414);
+  padding: 1rem 2rem;
+}
+
+.container__section__arrow {
+  color: #e4e4e4;
+  background: rgba(0, 0, 0, 0.274);
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  margin: 0.3rem;
+}
+
+.container__section__actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__section__user {
+  font-size: 0.8rem;
+  background-color: #191414;
+  color: #e4e4e4;
+  padding: 10px 20px;
+  border-radius: 16px;
+}
+
+.container__section__radio-header {
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 0 1rem 0;
+  gap: 1.4rem;
+}
+
+.container__section__radio-header__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  background: linear-gradient(120deg, #211c27, #191414);
+  box-shadow: 0px 0px 17px -3px #000000;
+}
+
+.container__section__radio-header__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: #fff;
+}
+
+.container__section__radio-header__infos p {
+  font-size: 0.7rem;
+}
+
+.container__section__radio-header__infos h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.container__section__radio-header__infos h3 {
+  font-weight: 600;
 }
