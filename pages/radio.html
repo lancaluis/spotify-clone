@@ -20,7 +20,7 @@
   </head>
   <body>
     <main class="container">
-      <aside class="container__sidebar">
+      <aside class="container__sidebar hide">
         <div class="container__sidebar__brand">
           <img
             class="sidebar__brand"
@@ -51,8 +51,8 @@
       <section class="container__section">
         <div class="container__section__actions-bar">
           <div>
-            <i class="fas fa-chevron-left container__section__arrow"></i>
-            <i class="fas fa-chevron-right container__section__arrow"></i>
+            <i class="fas fa-chevron-left container__section__arrow hide"></i>
+            <i class="fas fa-chevron-right container__section__arrow hide"></i>
           </div>
           <div class="container__section__user">Erick Wendel</div>
         </div>
@@ -62,7 +62,7 @@
           <div class="container__section__radio-header__infos">
             <p>podcast</p>
             <h1>CodePen Radio</h1>
-            <h3>CodePen Blog</h3>
+            <h3 class="hide">CodePen Blog</h3>
           </div>
         </div>
 
@@ -79,9 +79,12 @@
               <!-- Music Card -->
               <div class="container__section__content__cards__divider"></div>
               <div class="container__section__content__cards__card">
-                <div class="container__section__content__cards__image"></div>
-                <div>
+                <div class="change-side">
+                  <div class="container__section__content__cards__image"></div>
                   <h4>256: With Louis Hoebregts</h4>
+                </div>
+                <div>
+                  <h4 class="hide">256: With Louis Hoebregts</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
                     delectus commodi fugiat in necessitatibus rem ab veritatis
@@ -97,7 +100,7 @@
               </div>
             </div>
             <div class="container__section__content__cards">
-              <h3>about</h3>
+              <h3 class="hide">about</h3>
               <p>
                 The CodePen team talk about the ins and outs of running a web
                 software business.
@@ -107,5 +110,7 @@
         </div>
       </section>
     </main>
+
+    <div class="music-player"></div>
   </body>
 </html>
