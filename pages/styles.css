@@ -339,6 +339,7 @@ body {
     width: 95%;
     margin: auto;
     bottom: 8px;
+    height: 8vh;
     justify-content: space-between;
   }
   .player__song__image img {
