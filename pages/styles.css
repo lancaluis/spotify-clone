@@ -77,8 +77,17 @@ body {
   font-size: 0.8rem;
   background-color: #191414;
   color: #e4e4e4;
-  padding: 10px 20px;
+  padding: 3px 10px 3px 4px;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container__section__user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .container__section__radio-header {
