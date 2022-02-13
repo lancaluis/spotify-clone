@@ -262,7 +262,17 @@ body {
   gap: 1rem;
   align-items: center;
   margin-right: 1rem;
+  /* font-size: 1.3rem; */
+}
+.player__actions button {
+  border: none;
+  background: none;
   font-size: 1.3rem;
+  color: #fff;
+  border: none;
+}
+.player__actions button:hover {
+  cursor: pointer;
 }
 .player__audio {
   display: flex;
