@@ -166,8 +166,11 @@
           <button type="button">
             <i class="fas fa-step-backward"></i>
           </button>
-          <button type="button">
-            <i class="fas fa-play-circle"></i>
+          <button
+            type="button"
+            onclick="playSound('player', 'fa-play-circle', 'fa-pause-circle')"
+          >
+            <i id="player" class="fas fa-play-circle"></i>
           </button>
           <button type="button">
             <i class="fas fa-step-forward"></i>
@@ -181,10 +184,18 @@
       </div>
 
       <div class="player__actions">
-        <button type="button">
-          <i class="fas fa-play hide-dektop"></i>
+        <button
+          type="button"
+          onclick="playSound('player2' ,'fa-play', 'fa-pause')"
+        >
+          <i id="player2" class="fas fa-play hide-dektop"></i>
         </button>
       </div>
     </div>
+    <div class="device-bar hide">
+      <i class="fas fa-volume-up"></i>
+      <p>Listening on Erick Wendel</p>
+    </div>
+    <script src="../js/radio.js"></script>
   </body>
 </html>

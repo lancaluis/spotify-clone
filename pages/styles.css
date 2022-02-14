@@ -235,6 +235,7 @@ body {
   color: #fff;
   background: #202020;
   border-top: #292929 solid 1px;
+  padding-bottom: 20px;
 }
 .player__song {
   display: flex;
@@ -262,7 +263,6 @@ body {
   gap: 1rem;
   align-items: center;
   margin-right: 1rem;
-  /* font-size: 1.3rem; */
 }
 .player__actions button {
   border: none;
@@ -293,6 +293,28 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 5px;
+}
+
+.device-bar {
+  position: fixed;
+  width: 100%;
+  height: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background: #1d8954;
+  color: #191414;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.device-bar p {
+  padding: 0.5rem 1.5rem 0.5rem 0;
 }
 
 /* Mobile Version */
@@ -364,6 +386,7 @@ body {
     bottom: 8px;
     height: 8vh;
     justify-content: space-between;
+    padding-bottom: 0px;
   }
   .player__song {
     gap: 0.8rem;
