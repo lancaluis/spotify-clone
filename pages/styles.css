@@ -258,41 +258,12 @@ body {
   height: 50px;
   margin-left: 1rem;
 }
+
 .player__actions {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-right: 1rem;
-}
-.player__actions button {
-  border: none;
-  background: none;
-  font-size: 1.3rem;
-  color: #fff;
-  border: none;
-}
-.player__actions button:hover {
-  cursor: pointer;
-}
-.player__audio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: 30%;
-}
-.player__audio__actions {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  gap: 0.6rem;
-  width: 100%;
-}
-.player__progress-bar {
-  background: #bebebe5b;
-  height: 4px;
-  width: 100%;
-  border-radius: 5px;
 }
 
 .device-bar {
@@ -315,6 +286,83 @@ body {
 
 .device-bar p {
   padding: 0.5rem 1.5rem 0.5rem 0;
+}
+
+/* AUDIO PLAYER */
+.audio-player {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.audio-player .player-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.audio-player #playAudio {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("https://img.icons8.com/FFFFFF/play") no-repeat center;
+  background-size: contain;
+}
+.audio-player #playAudio.pause {
+  background: url("https://img.icons8.com/FFFFFF/pause") no-repeat center;
+  background-size: contain;
+}
+.audio-player #nextAudio {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("https://img.icons8.com/FFFFFF/end") no-repeat center;
+  background-size: contain;
+}
+.audio-player #previousAudio {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("https://img.icons8.com/FFFFFF/skip-to-start") no-repeat
+    center;
+  background-size: contain;
+}
+.player-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.player-controls-row p:first-of-type {
+  width: 45px;
+}
+.audio-player #seekObjContainer {
+  position: relative;
+  width: 300px;
+  margin: 0 5px;
+  height: 5px;
+}
+.audio-player #seekObjContainer #seekObj {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #666666;
+}
+.audio-player #seekObjContainer #seekObj #percentage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 /* Mobile Version */
@@ -399,5 +447,8 @@ body {
   }
   .player__actions {
     margin-right: 1rem;
+  }
+  .audio-player {
+    width: 5%;
   }
 }
